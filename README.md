@@ -22,9 +22,7 @@ class Page_one {
     {
         this.router.navigateByData({
             url: ["/Page_two"],
-            data: {
-                test: 'Done!'
-            }
+            data: [1,2,3,4,5] //data - <any> type
         });
     }
 }
@@ -42,7 +40,7 @@ class Page_two implements OnInit {
     
     public ngOnInit() : void
     {
-    	console.log(this.router.getNavigatedData()); //output {test: 'Done!'}
+    	console.log(this.router.getNavigatedData()); //output [1,2,3,4,5]
     }
 }
 ```
