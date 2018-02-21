@@ -41,9 +41,9 @@ class Page_two implements OnInit {
     ){}
     
     public ngOnInit() : void
-	  {
-        console.log(this.router.getNavigatedData()); //output {test: 'Done!'}
-	  }
+    {
+    	console.log(this.router.getNavigatedData()); //output {test: 'Done!'}
+    }
 }
 ```
 
