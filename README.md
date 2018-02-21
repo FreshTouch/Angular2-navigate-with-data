@@ -38,7 +38,7 @@ class Page_two implements OnInit {
         private router: Router
     ){}
     
-    public ngOnInit() : void
+    public ngOnInit()
     {
     	console.log(this.router.getNavigatedData()); //output [1,2,3,4,5]
     }
