@@ -1,14 +1,19 @@
 # Angular2-navigate-with-data
-Angular2+/ - navigate with data
+Angular2+/4/5 - navigate with data
+
+## Install
+<blockquote>
+  npm install angular2-navigate-with-data -save
+</blockquote>
 
 ## How to use
 Init into app.module
 <blockquote>
-  import "./reflect-router";
+  import "angular2-navigate-with-data";
 </blockquote>
 
 ## Example
-```
+```typescript
 import {Router} from '@angular/router';
 
 class PageOne {
@@ -19,7 +24,7 @@ class PageOne {
     public redirect()
     {
         this.router.navigateByData({
-            url: ["/Page_two"],
+            url: ["/PageTwo"],
             data: [1,2,3,4,5] //data - <any> type
         });
     }
@@ -27,7 +32,7 @@ class PageOne {
 ```
 
 
-```
+```typescript
 import {Router} from '@angular/router';
 import {OnInit} from "@angular/core";
 
