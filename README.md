@@ -25,7 +25,8 @@ class PageOne {
     {
         this.router.navigateByData({
             url: ["/PageTwo"],
-            data: [1,2,3,4,5] //data - <any> type
+            data: [1,2,3,4,5], //data - <any> type
+            //extras: {} - <NavigationExtras> type, optional parameter
         });
     }
 }
