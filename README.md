@@ -4,7 +4,7 @@ Angular2+/ - navigate with data
 ## How to use
 Init into app.module
 <blockquote>
-  import {ReflectionAngularModules} from "./reflection.angularModules";
+  import "./reflect-router";
   
   ReflectionAngularModules.init();
 </blockquote>
@@ -13,7 +13,7 @@ Init into app.module
 ```
 import {Router} from '@angular/router';
 
-class Page_one {
+class PageOne {
     constructor (
         private router: Router
     ){}
@@ -33,7 +33,7 @@ class Page_one {
 import {Router} from '@angular/router';
 import {OnInit} from "@angular/core";
 
-class Page_two implements OnInit {
+class PageTwo implements OnInit {
     constructor (
         private router: Router
     ){}
