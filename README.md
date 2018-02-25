@@ -5,8 +5,6 @@ Angular2+/ - navigate with data
 Init into app.module
 <blockquote>
   import "./reflect-router";
-  
-  ReflectionAngularModules.init();
 </blockquote>
 
 ## Example
