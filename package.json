@@ -1,0 +1,21 @@
+{
+  "name": "Angular2-navigate-with-data",
+  "version": "1.0.0",
+  "description": "Angular2+/4/5 - navigate with data",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hipparch/Angular2-navigate-with-data.git"
+  },
+  "keywords": [
+    "angular 2",
+    "angular 4",
+    "angular 5",
+    "navigate with data"
+  ],
+  "author": "Navasardyan Suren <hipparchus@ya.ru>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Hipparch/Angular2-navigate-with-data/issues"
+  },
+  "homepage": "https://github.com/Hipparch/Angular2-navigate-with-data#readme"
+}
