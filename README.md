@@ -7,7 +7,7 @@ Angular2+/4/5 - navigate with data
 </blockquote>
 
 ## How to use
-Init into app.module
+Init into app.module.ts
 ```typescript
   import "angular2-navigate-with-data";
 ```
