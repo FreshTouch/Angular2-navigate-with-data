@@ -1,9 +1,13 @@
 import {Router} from "@angular/router";
 import {NavigationExtras} from "@angular/router/src/router";
 
+const REFLECT_CLASS: any = {
+    ROUTER: Object.assign({}, Router)
+};
+
 declare module "@angular/router" {
 
-    export class Router extends ReflectRouter.ROUTER() {
+    export class Router extends REFLECT_CLASS.ROUTER {
 
         private _sendingData: any;
 
@@ -13,8 +17,6 @@ declare module "@angular/router" {
 }
 
 namespace ReflectRouter {
-
-    export const ROUTER: Function = () : any => Object.assign({}, Router);
 
     export interface NavigatedData {
         url: Array<any>,
