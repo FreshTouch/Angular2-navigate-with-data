@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "baseUrl": "../Desktop/Новая папка 2",
+    "baseUrl": ".",
     "declaration": true,
     "stripInternal": true,
     "experimentalDecorators": true,
