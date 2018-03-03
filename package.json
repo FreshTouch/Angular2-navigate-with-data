@@ -1,6 +1,6 @@
 {
   "name": "angular2-navigate-with-data",
-  "version": "1.1.1",
+  "version": "1.1.11",
   "description": "Angular2+/4/5 - navigate with data",
   "main": "dist/bundles/bundle.umd.js",
   "typings": "dist/index.d.ts",
