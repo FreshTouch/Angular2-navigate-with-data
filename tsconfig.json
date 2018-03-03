@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    "baseUrl": "../Desktop/Новая папка 2",
+    "declaration": true,
+    "stripInternal": true,
+    "experimentalDecorators": true,
+    "strictNullChecks": true,
+    "noImplicitAny": true,
+    "module": "es2015",
+    "moduleResolution": "node",
+    "paths": {
+      "@angular/router": ["node_modules/@angular/router"]
+    },
+    "rootDir": ".",
+    "outDir": "dist",
+    "sourceMap": true,
+    "inlineSources": true,
+    "target": "es5",
+    "skipLibCheck": true,
+    "lib": [
+      "es2015",
+      "dom"
+    ]
+  },
+  "files": [
+    "index.ts"
+  ],
+  "angularCompilerOptions": {
+    "strictMetadataEmit": true
+  }
+}

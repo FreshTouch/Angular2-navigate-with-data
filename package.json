@@ -1,7 +1,16 @@
 {
   "name": "angular2-navigate-with-data",
-  "version": "1.0.4",
+  "version": "1.1.0",
   "description": "Angular2+/4/5 - navigate with data",
+  "main": "dist/bundles/bundle.umd.js",
+  "typings": "dist/index.d.ts",
+  "module": "dist/index.js",
+  "scripts": {
+    "transpile": "ngc",
+    "package": "rollup -c",
+    "minify": "uglifyjs dist/bundles/bundle.umd.js --screw-ie8 --compress --mangle --comments --output dist/bundles/bundle.umd.min.js",
+    "build": "npm run transpile && npm run package && npm run minify"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Hipparch/Angular2-navigate-with-data.git"
