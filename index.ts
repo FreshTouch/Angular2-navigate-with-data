@@ -12,7 +12,7 @@ declare module "@angular/router" {
         private _sendingData: any;
 
         public navigateByData( data: ReflectRouter.NavigatedData ) : Promise<boolean>;
-        public getNavigatedData(): any;
+        public getNavigatedData() : any;
     }
 }
 
