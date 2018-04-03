@@ -27,7 +27,12 @@ export namespace ReflectRouter {
     export function init() : void
     {
         Router.prototype.navigateByData = function ( data: NavigatedData ) : Promise<boolean> {
-            this._sendingData = data.data;
+            
+            if (data.data)
+                this._sendingData = data.data;
+            else
+                this._sendingData = null;
+            
             return this.navigate(data.url, data.extras);
         };
 
@@ -37,7 +42,7 @@ export namespace ReflectRouter {
 
             if (Array.isArray(data))
                 data = Object.assign([], data);
-            else if (typeof data == "object")
+            else if (data && typeof data == "object")
                 data = Object.assign({}, data);
 
             this._sendingData = null;
