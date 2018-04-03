@@ -32,8 +32,6 @@ export namespace ReflectRouter {
             
             if (data.data)
                 this._sendingData = data.data;
-            else
-                this._sendingData = null;
             
             return this.navigate(data.url, data.extras);
         };
