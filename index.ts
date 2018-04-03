@@ -40,12 +40,15 @@ export namespace ReflectRouter {
 
             let data: any = this._sendingData;
 
-            if (Array.isArray(data))
-                data = Object.assign([], data);
-            else if (data && typeof data == "object")
-                data = Object.assign({}, data);
+            if (data)
+            {
+                if (Array.isArray(data))
+                    data = Object.assign([], data);
+                else if (data && typeof data == "object")
+                    data = Object.assign({}, data);
 
-            this._sendingData = null;
+                this._sendingData = null;
+            }
 
             return data;
         };
