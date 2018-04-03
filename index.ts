@@ -30,7 +30,7 @@ export namespace ReflectRouter {
 
         Router.prototype.navigateByData = function ( data: NavigatedData ) : Promise<boolean> {
             
-            if (data.data)
+            if (data.data !== undefined && data.data !== null)
                 this._sendingData = data.data;
             
             return this.navigate(data.url, data.extras);
@@ -44,12 +44,13 @@ export namespace ReflectRouter {
             {
                 if (Array.isArray(data))
                     data = Object.assign([], data);
-                else if (data && typeof data == "object")
+                else if (typeof data == "object")
                     data = Object.assign({}, data);
-
-                this._sendingData = null;
             }
 
+            if (data !== null)
+                this._sendingData = null;
+            
             return data;
         };
     }
