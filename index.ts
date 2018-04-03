@@ -26,6 +26,8 @@ export namespace ReflectRouter {
 
     export function init() : void
     {
+        Router.prototype._sendingData = null;
+
         Router.prototype.navigateByData = function ( data: NavigatedData ) : Promise<boolean> {
             
             if (data.data)
